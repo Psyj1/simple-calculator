@@ -1,0 +1,112 @@
+/* Reset some basic styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Center calculator in the page */
+body {
+  background-color: #f0f0f0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Calculator container */
+.calculator {
+  background-color: #222;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+/* Display styles */
+#display {
+  background-color: #000;
+  color: #0f0;
+  font-size: 2.2rem;
+  text-align: right;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  overflow-x: auto;
+}
+
+/* Button container */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Common button styles */
+.btn {
+  padding: 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+/* Digit buttons */
+.digit {
+  background-color: #333;
+  color: #fff;
+}
+
+.digit:hover {
+  background-color: #444;
+}
+
+/* Operator buttons */
+.operator {
+  background-color: #ff9500;
+  color: #fff;
+}
+
+.operator:hover {
+  background-color: #e58c00;
+}
+
+/* Special buttons */
+#equals {
+  grid-column: span 2;
+  background-color: #28a745;
+  color: #fff;
+}
+
+#equals:hover {
+  background-color: #218838;
+}
+
+#clear {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+#clear:hover {
+  background-color: #c82333;
+}
+
+#backspace {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+#backspace:hover {
+  background-color: #5a6268;
+}
+
+.decimal {
+  background-color: #333;
+  color: #fff;
+}
+
+.decimal:hover {
+  background-color: #444;
+}
